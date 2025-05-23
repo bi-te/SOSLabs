@@ -1,1 +1,1 @@
-run ```dotnet ef database update``` to create database
+run ```dotnet ef database update``` in project folder to create database
