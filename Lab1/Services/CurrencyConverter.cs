@@ -35,9 +35,9 @@ public class CurrencyConverterService
         }
     };
 
-    public IEnumerable<string> GetAllCurrencies()
+    public List<string> GetAllCurrencies()
     {
-        return _exchangeRates.Keys;
+        return _exchangeRates.Keys.ToList();
     }
     
     public ConversionResponseDto Convert(ConversionRequestDto request)

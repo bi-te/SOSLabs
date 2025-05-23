@@ -30,7 +30,7 @@ public class CurrencyController : ControllerBase
     }
 
     [HttpGet("supported-currencies")]
-    public ActionResult<IEnumerable<string>> GetSupportedCurrencies()
+    public ActionResult<List<string>> GetSupportedCurrencies()
     {
         return Ok(_currencyConverterService.GetAllCurrencies());
     }
